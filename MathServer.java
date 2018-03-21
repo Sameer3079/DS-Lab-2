@@ -43,7 +43,7 @@ System.out.println("Multiplying " + a + " and " + b + " in the Server");
       }
 System.out.println("Dividing " + a + " and " + b + " in the Server");
 
-        return a/b; //check for division with zero here!
+        return a/b;
     }
 
     public double square_root(double a) throws RemoteException {
