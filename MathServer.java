@@ -33,6 +33,14 @@ System.out.println("Multiplying " + a + " and " + b + " in the Server");
 
 
     public int divide(int a, int b) throws RemoteException {
+      if(a==0){
+        System.out.println("The value of a is zero");
+        return -1;
+      }
+      else if(b==0){
+        System.out.println("The value of b is zero");
+        return -1;
+      }
 System.out.println("Dividing " + a + " and " + b + " in the Server");
 
         return a/b; //check for division with zero here!
@@ -40,7 +48,7 @@ System.out.println("Dividing " + a + " and " + b + " in the Server");
 
     public double square_root(double a) throws RemoteException {
       System.out.println("Square rooting " + a + " in the Server");
-      return sqrt(a);
+      return Math.sqrt(a);
     }
 
     public double square(double a) throws RemoteException {

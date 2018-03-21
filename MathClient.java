@@ -19,6 +19,8 @@ public class MathClient {
             System.out.println  ("Subtract : " + service.subtract(5,2));
             System.out.println  ("Multiply : " + service.multiply(2,6));
             System.out.println  ("Divide : " + service.divide(4,2));
+            System.out.println  ("Square Root : " + service.square_root(25));
+            System.out.println  ("Square : " + service.square(5));
         } catch (NotBoundException ex) {
             System.err.println(ex.getMessage());
         } catch (MalformedURLException ex) {
